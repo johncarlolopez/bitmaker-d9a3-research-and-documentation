@@ -111,12 +111,26 @@ puts "Did any animal have a \"burrow\" value? #{animals.has_value?("burrow")}"
 # ### Time
 # ___
 #   * ```now```
-#       Arguments: (object val=req)
-#       Return type: Boolean
+#       Arguments: (none}
+#       Return type: object time
 #       Exmaple code of how to use method:
 puts "********* .now *********"
+puts "Current date and time: #{Time.now}"
 #
 # ### File
 # ___
 #   * ```exist?```
+#       Arguments: (string filename)
+#       Return type: Boolean
+#       Exmaple code of how to use method:
+puts "********* .exist *********"
+filereal = "./exercise.rb"
+filefake = "./exercise2.rb"
+puts "Does #{filereal} exist? #{File.exist?(filereal)}"
+puts "Does #{filefake} exist? #{File.exist?(filefake)}"
 #   * ```extname```
+#       Arguments: (string filename)
+#       Return type: string extension name
+#       Exmaple code of how to use method:
+puts "********* .extname *********"
+puts "The extension of \".\/exercise.rb\" is #{File.extname("./exercise.rb")}"

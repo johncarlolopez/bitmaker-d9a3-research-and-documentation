@@ -3,7 +3,7 @@
 
 ## Assignment
 ___
-For each of the methods listed below
+For each of the methods listed below:
 
 1. Read the docs
 2. Try out the method in ```irb``` using a few different values
