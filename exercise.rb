@@ -44,7 +44,7 @@ print "#{testsplit.split}\n"
 #       Arguments: (as many strings//at least one is required to function properly)
 #       Return type: Boolean
 #       Exmaple code of how to use method:
-puts "********* .start_with *********"
+puts "********* .start_with? *********"
 testswstring = "The King and I"
 testswvar = "The"
 print "Does \"#{testswstring}\" start with \"#{testswvar}\"? "
@@ -84,12 +84,37 @@ puts "The last season is gone and now all that is left is: #{seasons}"
 # ### Hash
 # ___
 #   * ```to_a```
+#       Arguments: none
+#       Return type: array
+#       Exmaple code of how to use method:
+puts "********* .to_a *********"
+animals = {
+  fish: "swim",
+  birds: "fly",
+  cheetah: "runs"
+}
+puts "Animal hash: #{animals}"
+puts "Hash converted to nested array: #{animals.to_a}"
 #   * ```has_key?```
+#       Arguments: (object key=req)
+#       Return type: Boolean
+#       Exmaple code of how to use method:
+puts "********* .has_key? *********"
+puts "Did the animals hash contain the :fish key? #{animals.has_key?(:fish)}"
 #   * ```has_value?```
-#
+#       Arguments: (object val=req)
+#       Return type: Boolean
+#       Exmaple code of how to use method:
+puts "********* .has_value? *********"
+puts "Did any animal have a \"swim\" value? #{animals.has_value?("swim")}"
+puts "Did any animal have a \"burrow\" value? #{animals.has_value?("burrow")}"
 # ### Time
 # ___
 #   * ```now```
+#       Arguments: (object val=req)
+#       Return type: Boolean
+#       Exmaple code of how to use method:
+puts "********* .now *********"
 #
 # ### File
 # ___
