@@ -41,7 +41,7 @@ testsplit = "one two three four five six"
 puts testsplit
 print "#{testsplit.split}\n"
 #   * ```start_with?```
-#       Arguments: (as many strings)
+#       Arguments: (as many strings//at least one is required to function properly)
 #       Return type: Boolean
 #       Exmaple code of how to use method:
 puts "********* .start_with *********"
@@ -54,10 +54,33 @@ puts testswstring.start_with?(testswvar)
 # ### Array
 # ___
 #   * ```first```
+#       Arguments: None
+#       Return type: Object or nil
+#       Exmaple code of how to use method:
+puts "********* .first *********"
+seasons = ["spring", "summer","fall","winter"]
+puts "#{seasons.first.capitalize} is the first season"
 #   * ```delete_at```
+#       Arguments: (integer index=req)
+#       Return type: Object or nil
+#       Exmaple code of how to use method:
+puts "********* .delete_at *********"
+seasons.delete_at(0)
+puts "The rest of the seasons are #{seasons}"
 #   * ```delete```
+#       Arguments: object
+#       Return type: object or nil
+#       Exmaple code of how to use method:
+puts "********* .delete *********"
+seasons.delete("fall")
+puts "Now Fall is gone: #{seasons}"
 #   * ```pop```
-#
+#       Arguments: (integer amount)
+#       Return type: object/s or nil
+#       Exmaple code of how to use method:
+puts "********* .pop *********"
+seasons.pop
+puts "The last season is gone and now all that is left is: #{seasons}"
 # ### Hash
 # ___
 #   * ```to_a```
